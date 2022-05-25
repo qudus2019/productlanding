@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product landing page</title>
+    <meta charset="utf-8" name="viewport" width="device-width initial-scale=1.0">
+    <style>
+body {
+    background:url(images/pattern-background-desktop.svg)
+}
+main{
+    padding:0px 10px 10px 10px;
+}
+h2{color: brown;
+    margin:10px 0px 10px 10px;
+}
+
+#imglogo{display: flex;
+background:url(images/apple.jpg) no-repeat fixed center ;
+border-radius: 20%;}
+
+h1 {text-align: center;
+color:}
+
+p{text-align: justify;
+line-height: 25px;}
+
+#nav-bar{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: auto;
+}
+
+#video{
+    width:500px ;
+    height:250px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.nav-link{
+    text-decoration: none;
+    color: brown;
+}
+
+#header{display: flex;
+justify-content: space-between;
+background-color: rgb(162, 162, 247);
+height:70px;
+box-sizing: border-box;
+border: 2px solid green;
+border-radius: 10px;
+padding: 10px;}
+
+#formsec{display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: fit-content;
+    background-color: rgb(162, 162, 247);
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 10px;}
+
+#email{
+    width:300px;
+    height:30px;
+    border:3px solid green;
+}
+
+#submit{
+    background-color: green;
+    color: white;
+    width:100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#price-sec{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    border: 2px solid black;
+    padding:20px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    border: 2px solid black;
+}
+
+.price{
+    border: 2px solid green;
+    border-radius: 10px;
+    padding:20px;
+
+}
+footer{display: flex;
+justify-content: center;
+margin-top:50px;
+padding: 10px;
+background-color: rgb(162, 162, 247);
+border-radius: 10px;
+}
+
+@media only screen and (max-width:560px){
+    body{
+font-size: 16px;
+overflow: auto;
+}
+header, #video, #formsec, #form,#email{
+    width:70%;
+    margin-left:40px;
+
+}
+.price{width: 80%;
+height: fit-content;}
+}
+
+#price-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-style: 16px;
+}
+    </style>
+</head>
+<body>
+<header id="header">
+   <div id="imglogo"> <img src="images/icon-music.svg" alt="logo">
+    <h2>AIMS</h2></div>
+
+    <nav id="nav-bar">
+<a href="#formsec" class="nav-link">Form</a>
+<a href="#price-sec" class="nav-link">Price Section</a>
+<a href="#addy" class="nav-link">Address</a>
+    </nav>
+</header>
+<main id="main">
+
+<header><h1>OUR COMPANY</h1></header>
+<p>Lorem ipsum vitae posuere elit porttitor ut. Donec interdum at arcu ut imperdiet. Integer interdum erat
+    eget mi ornare, quis scelerisque tortor lobortis. Nulla dapibus, nisi nec hendrerit mollis,
+    massa nulla vulputate sam eu. Phasellus nec efficitur ex. Suspendisse pharetra, lectus et
+    facilisis gravida, augue turpis malesuada nulla,id tempor lorem sapien eget urna. Quisque vel 
+    ipsum hendrerit, tempor lacus in, lacinia neque</p>
+
+<center><video id="video" controls>
+    <source src=">
+</video></center>
+
+   <center> <section id="formsec"><form action="https://www.freecodecamp.com/email-submit" id="form">
+
+<p>Do you want to recieve email alerts from us ?</p>
+
+<label for="email">
+    <input type="email" id="email" name="email" placeholder="Enter email" validate required>
+</label>
+
+<input id="submit" type="submit">
+
+    </form></section></center>
+
+<section id="price-sec">
+    <div class="price">
+        <h3>Basic plan</h3>
+        <p>You get the following:</p>
+        <ul class="list">
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
+    </div>
+
+    <div class="price">
+        <h3>Classic plan</h3>
+        <p>You get the following:</p>
+        <ul class="list">
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
+    </div>
+
+    <div class="price">
+        <h3>Premium plan</h3>
+        <p>You get the following:</p>
+        <ul class="list">
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ul>
+    </div>
+    
+</section>
+
+</main>
+
+<footer id="footer">
+    <address id="addy">
+        Contact us on:
+       <p>Whatsapp: 09090909090</p> 
+       <p>Telephone: 09090909090</p>
+       <p>Email:qudussanusi202@yahoo.com</p>
+    </address>
+
+    &copy Aims incorporation ltd 2019-2022
+</footer>
+
+</body>
+</html>
